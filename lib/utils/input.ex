@@ -3,7 +3,7 @@ defmodule Advent22.Utils.Input do
   def download(day) do
     {:ok, %{status_code: 200, body: body}} =
       HTTPoison.get(
-        "https://adventofcode.com/2021/day/#{day}/input",
+        "https://adventofcode.com/2022/day/#{day}/input",
         [{"cookie", "session=" <> System.get_env("AOC_SESSION")}]
       )
 

@@ -2,7 +2,7 @@ defmodule Advent22.Day01Test do
   use ExUnit.Case
   import Advent22.Day01
 
-  @case1 """
+  @case """
   1000
   2000
   3000
@@ -20,10 +20,10 @@ defmodule Advent22.Day01Test do
   """
 
   test "part1" do
-    assert {0, 24000} = part1(@case1)
+    assert {0, 24000} = part1(@case)
   end
 
-  @tag :skip
   test "part2" do
+    assert 45000 = part2(@case)
   end
 end
